@@ -3,10 +3,11 @@ import data from "./data/data";
 import { createThreeScene } from "./threeScene";
 
 const cubes = [
-  "./cubeDrawings/cube1.webp",
-  "./cubeDrawings/cube2.webp",
-  "./cubeDrawings/cube3.webp",
-  "./cubeDrawings/cube4.webp",
+  "./corpse/notes1.jpg",
+  "./corpse/notes2.jpg",
+  "./corpse/notes3.jpg",
+  "./corpse/notes4.jpg",
+  
 ];
 
 const trees = [
@@ -15,6 +16,15 @@ const trees = [
   "./treeDrawings/tree3.jpg",
   "./treeDrawings/tree4.jpg",
 ];
+
+const houses = [
+  "./houseDrawings/house1.jpg",
+  "./houseDrawings/house2.jpg",
+  "./houseDrawings/house3.jpg",
+  "./houseDrawings/house4.jpg",
+];
+
+
 
 document.querySelector("#app").innerHTML = `
   <main id="container">
@@ -25,22 +35,37 @@ document.querySelector("#app").innerHTML = `
 
     <section id="projects">
       <div id="project-row">
-      Model 1
+      Exquisite Corpse
         <div class="three-model">
-          <div id="model1"></div>
+         <a href= "./public/corpse/SquareCorpse.jpg" target="_blank">
+           <img src="./public/corpse/SquareCorpse.jpg" id="model1" alt="Model 1 Image"/>
+         </a>
         </div>
         <div id="images-description">
           <div id="images">
-            ${cubes
-              .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
-              )
-              .join("")}
+            <a href= "./corpse/notes1.jpg" target="_blank">
+             <img src= "./corpse/notes1.jpg" alt="cube1" />
+            </a>
+            <a href="./corpse/notes2.jpg" target="_blank">
+             <img src="./corpse/notes2.jpg" alt="cube2" />
+            </a>
+            <a href="./corpse/notes3.jpg" target="_blank">
+             <img src="./corpse/notes3.jpg" alt="cube3" />
+            </a>
+            <a href="./corpse/notes4.jpg" target="_blank">
+             <img src="./corpse/notes4.jpg" alt="cube4" />
+            </a>
           </div>
-          <h4 id="description">A cubic 3D model is a geometric representation of a cube, consisting of six equal square faces joined at right angles. Each edge of the cube is of equal length, forming a symmetrical, rigid structure. The model can be textured, colored, or transparent, and it may include variations such as beveled edges or hollow interiors, depending on its intended purpose in design, animation, or engineering.</h4>
+          <h4 id="description">Aγάπη [agape]  
+
+
+          (n.) A selfless, unconditional love, often described as the highest form of love. It transcends romantic or familial love, emphasizing compassion, care, and goodwill toward others, especially without expecting anything in return. In philosophical and theological contexts, agape is often associated with divine love or the love that one should show toward humanity.</h4>
         </div>
       </div>
+      
+      
 
+      ${/*
       <div id="project-row">
       Model 2
         <div class="three-model">
@@ -58,7 +83,9 @@ document.querySelector("#app").innerHTML = `
           <h4 id="description">A 3D tree model is a geometric representation of a tree, featuring a trunk, branches, and foliage. The trunk is typically cylindrical, with textured bark, while the branches extend outward to support leaves or a canopy. It may include roots or flowers for added detail.</h4>
         </div>
       </div>
+*/""}
 
+${/*
       <div id="project-row">
       Model 3
         <div class="three-model">
@@ -66,15 +93,18 @@ document.querySelector("#app").innerHTML = `
         </div>
         <div id="images-description">
           <div id="images">
-            ${cubes
+            ${houses
               .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
+                (house, index) => 
+                  `<img src="${house}" alt="house${index + 1}" />`
               )
               .join("")}
           </div>
           <h4 id="description">A 3D house model is a geometric representation of a house, featuring walls, a roof, and windows. It often includes additional details such as doors, chimneys, and balconies, with textures like brick, wood, or stucco to enhance realism. The interior may also feature rooms, furniture, and lighting for a more detailed design.</h4>
         </div>
       </div>
+*/""}
+
     </section>
 
     <ul id="footer-items">
@@ -91,6 +121,6 @@ document.querySelector("#app").innerHTML = `
 `;
 
 // Create three.js scenes for each
-createThreeScene("#model1", "/3DModels/project1/cube.obj");
-createThreeScene("#model2", "/3DModels/project2/tree.obj");
-createThreeScene("#model3", "/3DModels/project3/cottage.obj");
+//createThreeScene("#model1", "/3DModels/project1/cube.obj");
+//createThreeScene("#model2", "/3DModels/project2/tree.obj");
+//createThreeScene("#model3", "/3DModels/project3/cottage.obj");
