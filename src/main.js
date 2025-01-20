@@ -37,8 +37,8 @@ document.querySelector("#app").innerHTML = `
       <div id="project-row">
       Exquisite Corpse
         <div class="three-model">
-         <a href= "./public/corpse/SquareCorpse.jpg" target="_blank">
-           <img src="./public/corpse/SquareCorpse.jpg" id="model1" alt="Model 1 Image"/>
+         <a href= "./corpse/SquareCorpse.jpg" target="_blank">
+           <img src="./corpse/SquareCorpse.jpg" id="model1" alt="Model 1 Image"/>
          </a>
         </div>
         <div id="images-description">
