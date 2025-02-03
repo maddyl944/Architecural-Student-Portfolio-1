@@ -86,7 +86,7 @@ document.querySelector("#app").innerHTML = `
              <img src="./Flowerboy/interoperability.jpg" alt="cube4" />
             </a>
           </div>
-          <h4 id="description">FlowerBoy is a character inpspired by my cadavre exquis. He was made for an analysis of interoperability between Rhino and Blender. Interoperability refers to the ability of different 3D modeling software systems to exchange data. This is important to be able to take full advantage of tools in different software systems and optimise modelling. </h4>
+          <h4 id="description">Flower Boy is a character inpspired by my cadavre exquis. He was made for an analysis of interoperability between Rhino and Blender. Interoperability refers to the ability of different 3D modeling software systems to exchange data. This is important to be able to take full advantage of tools in different software systems and optimise modelling. </h4>
         </div>
       </div>
 
