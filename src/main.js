@@ -11,10 +11,10 @@ const cubes = [
 ];
 
 const trees = [
-  "./treeDrawings/tree1.jpg",
-  "./treeDrawings/tree2.jpg",
-  "./treeDrawings/tree3.jpg",
-  "./treeDrawings/tree4.jpg",
+  "./Flowerboy/3Dfront.jpg",
+  "./Flowerboy/paperfront.jpg",
+  "./Flowerboy/bothmodel.jpg",
+  "./Flowerboy/interoperability.jpg",
 ];
 
 const houses = [
@@ -65,25 +65,31 @@ document.querySelector("#app").innerHTML = `
       
       
 
-      ${/*
+      
       <div id="project-row">
-      Model 2
+      Interoperability
         <div class="three-model">
           <div id="model2"></div>
         </div>
         <div id="images-description">
           <div id="images">
-            ${trees
-              .map(
-                (trees, index) =>
-                  `<img src="${trees}" alt="tree${index + 1}" />`
-              )
-              .join("")}
+            <a href= "./Flowerboy/3Dfront.jpg"_blank">
+             <img src= "./Flowerboy/3Dfront.jpg" alt="cube1" />
+            </a>
+            <a href="./Flowerboy/paperfront.jpg"_blank">
+             <img src="./Flowerboy/paperfront.jpg" alt="cube2" />
+            </a>
+            <a href="./Flowerboy/bothmodel.jpg">
+             <img src="./Flowerboy/bothmodel.jpg" />
+            </a>
+            <a href="./Flowerboy/interoperability.jpg">
+             <img src="./Flowerboy/interoperability.jpg" alt="cube4" />
+            </a>
           </div>
-          <h4 id="description">A 3D tree model is a geometric representation of a tree, featuring a trunk, branches, and foliage. The trunk is typically cylindrical, with textured bark, while the branches extend outward to support leaves or a canopy. It may include roots or flowers for added detail.</h4>
+          <h4 id="description">FlowerBoy is a character inpspired by my cadavre exquis. He was made for an analysis of interoperability between Rhino and Blender. Interoperability refers to the ability of different 3D modeling software systems to exchange data. This is important to be able to take full advantage of tools in different software systems and optimise modelling. </h4>
         </div>
       </div>
-*/""}
+
 
 ${/*
       <div id="project-row">
@@ -122,5 +128,5 @@ ${/*
 
 // Create three.js scenes for each
 //createThreeScene("#model1", "/3DModels/project1/cube.obj");
-//createThreeScene("#model2", "/3DModels/project2/tree.obj");
+createThreeScene("#model2", "/3DModels/project2/flowerboyforweb.obj");
 //createThreeScene("#model3", "/3DModels/project3/cottage.obj");
